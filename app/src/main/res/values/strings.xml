@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProvaFoto</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+    </string>
+    <string name="scatta">Scatta</string>
+
+</resources>

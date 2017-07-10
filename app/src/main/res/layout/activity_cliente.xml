@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.alvise.provafoto.MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/large_text" />
+
+        <ScrollView
+            android:id="@+id/scrollTotale"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutPannello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:id="@+id/fotoScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+
+                 <Button
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:visibility="invisible"
+                     />
+
+                    <Button
+                        android:id="@+id/imageButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:visibility="invisible"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+         <!-- questo é il FAB da implementare -->
+        <!--    <android.support.design.widget.FloatingActionButton
+                android:id="@+id/myFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_add_black_24dp"
+                app:backgroundTint="@android:color/holo_blue_dark"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/> -->
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
+                    android:drawableLeft="@android:drawable/ic_menu_camera"
+                    android:onClick="takePhoto"
+                    android:text="@string/scatta"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/remove"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
+                    android:text="Allega"
+                    android:onClick="scelta"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible" />
+
+             </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
